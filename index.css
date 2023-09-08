@@ -1,0 +1,221 @@
+
+html {
+    scroll-behavior: smooth; scroll-snap-type: y mandatory; /* Enable vertical snap points */
+    scroll-snap-destination: 0% 100%; /* Set snap points at the start and end of each section */
+}
+
+/* Top left logo */
+#logo {
+    position: relative;
+    height: 250px;
+    background-color: #ccc;
+ }
+
+
+#toptit {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+#title {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* All NAV Related*/
+
+ .topnav {
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color: rgb(63, 60, 63);
+   width: 100%;
+   height: 70px;
+   z-index: 1;
+}
+ .nav {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: -10%;
+    list-style: none;
+}
+
+.nav li {   
+    margin-right: 10%; 
+}
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+ a:hover {
+    color: white;
+}
+ nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid blue;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+/* Menu options on nav bar */
+.menu {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ box-sizing: border-box;
+}
+/*Gradient bar across screen */
+
+.header {
+    position: static;
+    top : 0;
+    right: 100%;
+    width: 200%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+
+/* Nav bar menu  */
+
+.menu {
+    color: white;
+
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+ 
+a {
+    margin: 15px;
+    color: rgb(106, 43, 142);
+    text-decoration: none;
+}
+
+
+.love {
+    color: white;
+}
+/* #list {
+  
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+} */
+
+
+/*Menu Sections */ 
+
+#home {
+color: white;
+font-family: 'IBM Plex Sans', sans-serif;
+height: 700px;
+background: rgb(32, 32, 64); 
+width: 50%;
+height: 50%;
+text-align: center;
+line-height: 50px;
+border-radius: 10px;
+} 
+
+#home:hover {
+    background-color: rgb(106, 43, 142);
+    color: #fff;
+    transform: rotateY(10deg);
+}
+
+#home2 {
+color: white;
+font-family: 'IBM Plex Sans', sans-serif;
+height: 700px;
+background: rgb(57, 56, 56); 
+width: 100%;
+cursor: pointer;
+transition: pink 0.3s, color 0.3s;
+}
+
+
+#home3 {
+color: white;
+font-family: 'IBM Plex Sans', sans-serif;
+height: 700px;
+background: rgb(113, 41, 134); 
+width: 100%;
+}
+#home4 {
+color: white;
+font-family: 'IBM Plex Sans', sans-serif;
+height: 700px;
+background: rgb(215, 195, 220); 
+width: 100%;
+} */
+
+/*BOTTOM of page*/
+
+#footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
